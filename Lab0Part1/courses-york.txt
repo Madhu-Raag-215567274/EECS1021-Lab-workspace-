@@ -1,0 +1,40 @@
+? LE/ENG 2001 3.00 Engineering Projects				cannot take winter -only fall         	it is prereq for 3000 		not available winter		need it summer
+
+
+
+? SC/MATH 1090 3.00 Introduction to Logic for Computer Science	cannot take winter - prereq discrete 	it is prereq for 3311 & 3101 	 available winter		summer/fall2019
+? LE/EECS 2011 3.00 Fundamentals of Data Structures			cannot take winter -prereq disc & 2030         it is prereq for 3311 & 3101 	 available winter		summer/fall2019
+
+
+
+
+
+? SC/PHYS 2020 3.00 Electricity and Magnetism			cannot take winter -only fall         	prereq for nothing 		----------------		fall 2019	
+
+
+
+
+
+? LE/EECS 2021 4.00 Computer Organization			took winter
+? LE/EECS 2030 3.00 Advanced Object Oriented Programming  		took winter
+? LE/EECS 2210 3.00 Electronic Circuits and Devices			took winter
+? LE/ENG 2003 3.00 Effective Engineering Communication		took winter
+? SC/PHYS 2211 1.00 Experimental Electromagnetism 		took winter
+? SC/MATH 1028 3.00   Discrete Mathematics for Engineers		took winter
+
+
+
+
+
+? SC/MATH 2015 3.00 Applied Multivariate and Vector Calculus                        1111111
+? SC/MATH 2930 3.00 Introduction to Probability and Statistics                        1111111
+? LE/EECS 2200 3.00 Electrical Circuits                                                     	                       1111111
+
+
+
+
+? LE/EECS 2032 4.00 Introduction to Embedded Systems		not available
+
+
+
+
