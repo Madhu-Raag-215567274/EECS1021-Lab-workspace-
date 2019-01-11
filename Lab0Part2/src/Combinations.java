@@ -56,7 +56,7 @@ public class Combinations {
 	    System.out.println('('+A4 + ','+ b2+')');
 	    System.out.println('('+A4 + ','+ b3+')');
 	    System.out.println('('+A4 + ','+ b4+')');
-	    
+	    input.close();
 		
 		
 		
