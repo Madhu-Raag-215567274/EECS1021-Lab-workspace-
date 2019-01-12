@@ -33,7 +33,7 @@ public class Combinations {
 		
 		System.out.println("Enter the 4th integer :");
 		int b4 = input.nextInt();
-		input.nextLine();
+		//input.nextLine();
 		
 		System.out.println("Here are all 16 possible combinations:");		
 	    System.out.println('('+A + ','+ b+')');
