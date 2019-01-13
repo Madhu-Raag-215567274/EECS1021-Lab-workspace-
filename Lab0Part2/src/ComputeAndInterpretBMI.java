@@ -9,10 +9,10 @@ public class ComputeAndInterpretBMI {
 		String name =input.next();
 		
 		System.out.println(name +", Enter your height in inches: ");
-		int height =input.nextInt();
+		double height =input.nextDouble();
 		
 		System.out.println( name + ", Enter your weight in pounds ");	
-		int  weight = input.nextInt();
+		double  weight = input.nextDouble();
 		double hi = (height*height);
 		double we = weight;
 		double IBM = (we/hi)*703 ; 
