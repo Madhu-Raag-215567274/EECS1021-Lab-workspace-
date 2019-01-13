@@ -16,7 +16,7 @@ public class ComputeAndInterpretBMI {
 		double hi = (height*height);
 		double we = weight;
 		double IBM = (we/hi)*703 ; 
-		/// 703 is kg to pounds factor!
+		/// 703 is BMI(kg/m^2) to BMI(pounds) factor!
 		if(IBM <18.5) {
 			System.out.println(name +  ",you BMI is  " + IBM);
 			System.out.println("You are underwight!");
