@@ -32,7 +32,7 @@ public class ComputeAndInterpretBMI {
 
 		}
 		else {
-			System.out.println(name +  ",you BMI is " + IBM );
+			System.out.println(name +  ",your BMI is " + IBM );
 			System.out.println("You are obese!");
 		
 
