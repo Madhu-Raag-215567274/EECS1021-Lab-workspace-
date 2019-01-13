@@ -16,26 +16,31 @@ public class ComputeAndInterpretBMI {
 		double hi = (height*height);
 		double we = weight;
 		double IBM = (we/hi)*703 ; 
-		/// 703 is kg to pounds factor
+		/// 703 is kg to pounds factor!
 		if(IBM <18.5) {
-			System.out.println(name +  ",you BMI is " + IBM + " your underweight!");
+			System.out.println(name +  ",you BMI is  " + IBM);
+			System.out.println("You are underwight!");
 		}
 		else if (18.5<=IBM  && IBM<25.0) {
-			System.out.println(name +  ",you BMI is " + IBM + " your normal!");
+			System.out.println(name +  ",you BMI is " + IBM );
+			System.out.println("You are normal!");
 
 		}
 		else if(25.5<=IBM && IBM< 30.0) {
-			System.out.println(name +  ",you BMI is " + IBM + " overweight!");
+			System.out.println(name +  ",you BMI is " + IBM );
+			System.out.println("You are overwight!");
 
 		}
 		else {
-			System.out.println(name +  ",you BMI is " + IBM + " obese!");
-			
+			System.out.println(name +  ",you BMI is " + IBM );
+			System.out.println("You are obese!");
 		
+
 		}
-		input.close();
 		
 		
+			
+			input.close();
 		
 		
 		
