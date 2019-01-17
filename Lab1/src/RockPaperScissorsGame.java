@@ -109,7 +109,7 @@ public class RockPaperScissorsGame {
 		 
 		 
 	 }
-	 else if (n1==1) {
+	 else if (n1>n2) {
 		 
 		 System.out.println("========");
 		 System.out.println("Round 3");
@@ -151,7 +151,7 @@ public class RockPaperScissorsGame {
 			
 	 }
 	 
-	 else if (n2==1) {
+	 else if (n2<n1) {
 		 
 		 System.out.println("========");
 		 System.out.println("Round 3");
