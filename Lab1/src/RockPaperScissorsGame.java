@@ -123,17 +123,17 @@ public class RockPaperScissorsGame {
 			 String m6 = input.nextLine();
 			
 			 if (m5.equals(m6)) {
-				 System.out.println("Game over: a tie between " + name1 + " and " + name2);
+				 System.out.println("Game Over: "+ name1 +" wins!");
 				 
 			 }
 			else if  (m5.equals(R) && m6.equals(P)){
-				System.out.println("Game Over: "+ name2 +" wins!");
+				System.out.println("Game over: a tie between " + name1 + " and " + name2);
 			}
 			else if  (m5.equals(R) && m6.equals(S)) {
 				System.out.println("Game Over: "+ name1 +" wins!");	
 			} 
 			else if  (m5.equals(S) && m6.equals(R)){
-				System.out.println("Game Over: "+ name2 +" wins!");
+				System.out.println("Game over: a tie between " + name1 + " and " + name2);
 			}
 			else if  (m5.equals(P) && m6.equals(R)) {
 				System.out.println("Game Over: "+ name1 +" wins!");
@@ -141,7 +141,7 @@ public class RockPaperScissorsGame {
 			}
 
 		    else if  (m5.equals(P) && m6.equals(S)) {
-			System.out.println("Game Over: "+ name2 +" wins!");
+			System.out.println("Game over: a tie between " + name1 + " and " + name2);
 		    }
 		    else if  (m5.equals(S) && m6.equals(P)) {
 		    	System.out.println("Game Over: "+ name1 +" wins!");
@@ -165,20 +165,20 @@ public class RockPaperScissorsGame {
 			 String m6 = input.nextLine();
 			
 			 if (m5.equals(m6)) {
-				 System.out.println("Game over: a tie between " + name1 + " and " + name2);
+				 System.out.println("Game Over: "+ name2 +" wins!");
 				 
 			 }
 			else if  (m5.equals(R) && m6.equals(P)){
 				System.out.println("Game Over: "+ name2 +" wins!");
 			}
 			else if  (m5.equals(R) && m6.equals(S)) {
-				System.out.println("Game Over: "+ name1 +" wins!");	
+				System.out.println("Game over: a tie between " + name1 + " and " + name2);	
 			} 
 			else if  (m5.equals(S) && m6.equals(R)){
 				System.out.println("Game Over: "+ name2 +" wins!");
 			}
 			else if  (m5.equals(P) && m6.equals(R)) {
-				System.out.println("Game Over: "+ name1 +" wins!");
+				System.out.println("Game over: a tie between " + name1 + " and " + name2);
 				
 			}
 
@@ -186,7 +186,7 @@ public class RockPaperScissorsGame {
 			System.out.println("Game Over: "+ name2 +" wins!");
 		    }
 		    else if  (m5.equals(S) && m6.equals(P)) {
-		    	System.out.println("Game Over: "+ name1 +" wins!");
+		    	System.out.println("Game over: a tie between " + name1 + " and " + name2);
 			}
 			
 		  
