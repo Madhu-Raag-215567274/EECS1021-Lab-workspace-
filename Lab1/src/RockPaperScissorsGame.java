@@ -8,9 +8,9 @@ public class RockPaperScissorsGame {
 	
 	int n1 = 0;
 	int n2 = 0;
-	String R ="R";
-	String P ="P";
-	String S ="S";
+	String R ="r" ;
+	String P ="p";
+	String S ="s";
 	
 	System.out.println("Enter the name of player 1:");
 	String name1= input.nextLine();	
@@ -145,21 +145,18 @@ public class RockPaperScissorsGame {
 				
 			}
 
-		else if  (m5.equals(P) && m6.equals(S)) {
+		    else if  (m5.equals(P) && m6.equals(S)) {
 			System.out.println("Game Over: "+ name2 +" wins!");
-		}
-		else if  (m5.equals(S) && m6.equals(P)) {
-		System.out.println("Game Over: "+ name1 +" wins!");
-		}
+		    }
+		    else if  (m5.equals(S) && m6.equals(P)) {
+		    	System.out.println("Game Over: "+ name1 +" wins!");
+			}
 			
-		else if  (m5.equals(S) && m6.equals(R)) {
-			System.out.println("Game Over: "+ name2 +" wins!");
-		}
+		  
 					
-		
+	
 			
-		 
-	 }
+		 	 }
 	 
 	 
 	 
