@@ -18,6 +18,7 @@ public class Combinations {
 		
 		System.out.println("Enter the 4th string:");
 		String A4 = input.next();
+		input.nextLine();
 		
 		System.out.println("Enter the 1st integer :");
 		int b = input.nextInt();
@@ -33,11 +34,12 @@ public class Combinations {
 		
 		System.out.println("Enter the 4th integer :");
 		int b4 = input.nextInt();
-		//input.nextLine();
+		input.nextLine();
 		
 		System.out.println("Here are all 16 possible combinations:");		
-	    System.out.println('('+A + ','+ b+')');
-	    System.out.println('('+A + ','+ b2+')');
+	    System.out.println("("+b2 + ","+ A +")");
+	    System.out.println("("+b4 + ","+ A3+")");
+	   
 	    System.out.println('('+A + ','+ b3+')');
 	    System.out.println('('+A + ','+ b4+')');
 	    
@@ -56,7 +58,9 @@ public class Combinations {
 	    System.out.println('('+A4 + ','+ b2+')');
 	    System.out.println('('+A4 + ','+ b3+')');
 	    System.out.println('('+A4 + ','+ b4+')');
-	    input.close();
+	   
+	     input.close();
+	    
 		
 		
 		
