@@ -22,10 +22,8 @@ public class RockPaperScissorsGame {
 
 	
 	
-	System.out.println("========");
-	
-	System.out.println("Round 1:");
-	
+	System.out.println("========");	
+	System.out.println("Round 1:");	
 	System.out.println("========");
 	
 	System.out.println("What does "+ name1 + " play? (R,P or S): " );
@@ -38,10 +36,8 @@ public class RockPaperScissorsGame {
 	
 	
 	
-     System.out.println("========");
-	
-	System.out.println("Round 2");
-	
+     System.out.println("========");	
+	System.out.println("Round 2");	
 	System.out.println("========");
 	
 	
@@ -111,10 +107,10 @@ public class RockPaperScissorsGame {
   
 						 
 	 if (n1>n2){
-		 System.out.println("Game over " + name1 + " wins!");
+		 System.out.println("Game over: " + name1 + " wins!");
 	 }
 	 else if(n1<n2) {
-		 System.out.println("Game over " +name2 + " wins!");
+		 System.out.println("Game over: " +name2 + " wins!");
 		 
 	 }
 	 else if (n1==n2) {
@@ -127,7 +123,7 @@ public class RockPaperScissorsGame {
 			 String m5 = input.nextLine();
 			
 			
-			System.out.println("What does "+ name2 + " play? (R,P or S" );
+			System.out.println("What does "+ name2 + " play? (R,P or S):" );
 			 String m6 = input.nextLine();
 			
 			 if (m5.equals(m6)) {
