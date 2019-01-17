@@ -51,8 +51,7 @@ public class RockPaperScissorsGame {
 	
 		
 	 if (m1.equals(m2)) {
-		 n1=0;
-		 n2=0;
+		 
 		 
 	 }
 	else if  (m1.equals(R) && m2.equals(P)){
@@ -77,8 +76,7 @@ public class RockPaperScissorsGame {
 	}
 	 
 	else if (m3.equals(m4)) {
-		n1=0;
-		n2=0;
+		
 	}
 	 
 	 
@@ -151,7 +149,7 @@ public class RockPaperScissorsGame {
 			
 	 }
 	 
-	 else if (n2<n1) {
+	 else if (n1<n2) {
 		 
 		 System.out.println("========");
 		 System.out.println("Round 3");
@@ -189,8 +187,7 @@ public class RockPaperScissorsGame {
 		    	System.out.println("Game over: a tie between " + name1 + " and " + name2);
 			}
 			
-		  
-					
+		  					
 			
 	 }
 	 else if (n1==n2) {
