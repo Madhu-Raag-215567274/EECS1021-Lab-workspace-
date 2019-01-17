@@ -8,9 +8,9 @@ public class RockPaperScissorsGame {
 	
 	int n1 = 0;
 	int n2 = 0;
-	String R ="r" ;
-	String P ="p";
-	String S ="s";
+	String R ="R" ;
+	String P ="P";
+	String S ="S";
 	
 	System.out.println("Enter the name of player 1:");
 	String name1= input.nextLine();	
