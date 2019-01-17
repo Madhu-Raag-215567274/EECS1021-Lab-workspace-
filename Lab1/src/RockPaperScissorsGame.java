@@ -58,7 +58,7 @@ public class RockPaperScissorsGame {
 	
 
 	
-	 if (m1==m2) {
+	 if (m1.equals(m2)) {
 		 n1=0;
 		 n2=0;
 		 
@@ -84,7 +84,7 @@ public class RockPaperScissorsGame {
 		n1++;
 	}
 	 
-	else if (m2==m3) {
+	else if (m3.equals(m4)) {
 		n1=0;
 		n2=0;
 	}
@@ -118,7 +118,10 @@ public class RockPaperScissorsGame {
 		 
 	 }
 	 else if (n1==n2) {
+		 
+		 System.out.println("========");
 		 System.out.println("Round 3");
+		 System.out.println("========");
 		 
 		 System.out.println("What does "+ name1 + " play? (R,P or S):" );
 			 String m5 = input.nextLine();
