@@ -7,7 +7,7 @@ public class ComputerTax {
 		 System.out.println("Enter your name: ");
 		 String name= input.nextLine();
 		 System.out.println(name+ ", Enter your filling status (1 - Single Filing; 2 - Married Filing): ");
-		 int ste = input.nextInt();
+		 double ste = input.nextDouble();
 		 input.nextLine();
 		 
 		 if (ste==1) {
