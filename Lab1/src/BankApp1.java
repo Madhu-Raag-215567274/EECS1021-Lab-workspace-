@@ -26,7 +26,7 @@ public class BankApp1 {
 		double balance = input.nextDouble();
 		input.nextLine();			
 		if(balance > 0 && balance <= 1000) {
-			// valid initial balance
+			/* valid initial balance*/
 		}
 		else {
 			System.out.println("Error: initial balance " + balance + " is not in (0,1000].");
@@ -64,7 +64,7 @@ public class BankApp1 {
 				System.out.println("Error: depositive amount is too large.");
 			}
 			else {
-//				balance = balance + amount;
+				//balance = balance + amount;
 				balance += amount;
 			}
 		}
@@ -76,7 +76,7 @@ public class BankApp1 {
 				System.out.println("Error: withdraw amount is too large.");
 			}
 			else {
-//				balance = balance - amount;
+			//balance = balance - amount;
 				balance -= amount;
 			}
 		}
