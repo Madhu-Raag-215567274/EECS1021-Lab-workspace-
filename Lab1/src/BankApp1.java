@@ -20,7 +20,7 @@ public class BankApp1 {
 		Scanner input = new Scanner(System.in);
 		
 		// ------------------------
-		/* Stage 1 */
+		// Stage 1 
 		// ------------------------
 		System.out.println("Enter a balance (e.g., 200.45):");
 		double balance = input.nextDouble();
@@ -47,10 +47,9 @@ public class BankApp1 {
 		}
 		else {
 			System.out.println("Error: transaction type " + type + " is neither d nor w.");
-		}
-		
+		}		
 		// ------------------------
-		/* Stage 3 */
+		// Stage 3 
 		// ------------------------
 		System.out.println("Enter an amount for " + type + ": ");
 		double amount = input.nextDouble();
