@@ -14,6 +14,10 @@ public class DebuggerIfStatement {
 	    	if(5<=x &&x<=10) {
 	    		System.out.println("x is between 5 and 10");
 	    	}
+	    	else if(15<=x && x<=20){
+	    		System.out.println("x is between 15 and 20");
+
+	    	}
 	    	else {
 	    		System.out.println("x is smaller than 5 or  is larger than 10");
 	    	}
