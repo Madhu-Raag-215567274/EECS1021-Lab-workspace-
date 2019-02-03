@@ -71,8 +71,7 @@ public class PrintBetweenNumbers2 {
 					System.out.println("Bye!");
 				}
 				 if (yesNo.equals(yes)){
-				    yesNo= input.next();
-					input.nextLine();
+			   
 
 					yesNo="Y";
 					
@@ -82,10 +81,10 @@ public class PrintBetweenNumbers2 {
 					
 					
 						
-					}
+			 }
 				
 				
-			}
+		}
 			
 			while(x<=y) {
 				System.out.println(x);
