@@ -57,14 +57,14 @@ public class PrintBetweenNumbers4 {
 		
 			if (!(x<=y)) {
 				System.out.println("Error: lower bound " +x+ " is not less than or equal to the upper bound "+y+".");
-				System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+				System.out.println("Would you like to continue printing? (Y/N)");
 				String yesNo= input.next();
 				input.nextLine();
 		
 				if (!(yesNo.equals(no)||yesNo.equals(yes))) {
 				while (!(yesNo.equals(no)||yesNo.equals(yes))) {
-					System.out.println("Invalid indication on continuation: "+ yesNo);
-					System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+					System.out.println("Error: "+ yesNo+ " is not valid ");
+					System.out.println("Would you like to continue printing? (Y/N)");
 				    yesNo= input.next();
 					input.nextLine();					
 					
@@ -126,13 +126,13 @@ public class PrintBetweenNumbers4 {
 				}
 				while (!((x<=z && z<=y)||(y<=z && z<=x))) {
 					System.out.println("Error: middle number " + z+  " is not in-between the lower bound " +x+ " and upper bound " +y);
-					System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+					System.out.println("Would you like to continue printing? (Y/N)");
 					 yesNo= input.next();
 					 input.nextLine();
 						if (!(yesNo.equals(no)||yesNo.equals(yes))) {
 							while (!(yesNo.equals(no)||yesNo.equals(yes))) {
-								System.out.println("Invalid indication on continuation: "+ yesNo);
-								System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+								System.out.println("Error : " +yesNo+" is not valid");
+								System.out.println("Would you like to continue printing? (Y/N)");
 							    yesNo= input.next();
 								input.nextLine();					
 								
@@ -199,13 +199,13 @@ public class PrintBetweenNumbers4 {
 					}
 				}
 				
-				System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+				System.out.println("Would you like to continue printing? (Y/N)");
 				   yesNo= input.next();
 					input.nextLine();
 					if (!(yesNo.equals(no)||yesNo.equals(yes))) {
 						while (!(yesNo.equals(no)||yesNo.equals(yes))) {
-							System.out.println("Invalid indication on continuation: "+ yesNo);
-							System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+							System.out.println("Error: No is not valid ");
+							System.out.println("Would you like to continue printing? (Y/N)");
 						    yesNo= input.next();
 							input.nextLine();					
 							
