@@ -87,6 +87,7 @@ public class PrintBetweenNumbers4 {
 				y = input.nextInt();
 				System.out.println("Enter a middle number:");
 				 z = input.nextInt();
+				 yesNo="";
 				
 				while (!(x<=y)) {
 					System.out.println("Error: lower bound is not less than or equal to the upper bound. ");
@@ -300,6 +301,9 @@ public class PrintBetweenNumbers4 {
 			x = input.nextInt();
 			System.out.println("Enter a upper bound:");
 			y = input.nextInt();
+			System.out.println("Enter a middle number:");
+			 z = input.nextInt();
+			yesNo="";
 			
 			while (!(x<=y)) {
 				System.out.println("Error: lower bound is not less than or equal to the upper bound. ");
@@ -323,6 +327,8 @@ public class PrintBetweenNumbers4 {
 				x = input.nextInt();
 				System.out.println("Enter a upper bound:");
 				y = input.nextInt();
+				System.out.println("Enter a middle bound:");
+				z = input.nextInt();
 				
 				yesNo="";
 				
@@ -335,14 +341,79 @@ public class PrintBetweenNumbers4 {
 				
 			}
 			
+			while (!((x<=z && z<=y)||(y<=z && z<=x))) {
+				System.out.println("Error: middle number " + z+  " is not in-between the lower bound " +x+ " and upper bound " +y);
+				System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+				  yesNo= input.next();
+				 input.nextLine();
+
+				if (!(yesNo.equals(no)||yesNo.equals(yes))) {
+				while (!(yesNo.equals(no)||yesNo.equals(yes))) {
+					System.out.println("Invalid indication on continuation: "+ yesNo);
+					System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
+				    yesNo= input.next();
+					input.nextLine();					
+					
+
+				}
+			}
+				if (yesNo.equals(no)) {
+					System.out.println("Bye!");
+					System.exit(0);
+				}
 				
-			
-			while ((x<=y)) {
-				System.out.println(x);
+				while(yesNo.equals(yes)) {
+					
+					System.out.println("Enter a lower bound:");
+					x = input.nextInt();
+					System.out.println("Enter a upper bound:");
+					y = input.nextInt();
+					System.out.println("Enter a middle number:");
+					 z = input.nextInt();
+					 yesNo = "";
+				}
 				
-				x++;
+				
+				
 				
 			}
+			
+			
+				
+			
+			while ((x<=z && z<=y)) {
+				int even =z%2;		
+				if(x<=z) {
+				System.out.println("Odd numbers between " +x+ " and "+z+ " :");
+				while(x<=z ) {
+					
+					if (!((x%2)==0)) {
+						System.out.println(x);
+					}
+									
+				
+				
+				
+				x++;
+				}
+			  }
+				if (z<=y) {
+					System.out.println("Even numbers between " +z+ " and "+y+ " :");
+				
+				while (z<=y) {
+				   even = z%2;
+					if  (even==0) {
+					
+					System.out.println(z);
+					
+					}
+					
+					z++;
+				}
+				}
+			}
+			
+			
 			System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
 			   yesNo= input.next();
 				input.nextLine();
