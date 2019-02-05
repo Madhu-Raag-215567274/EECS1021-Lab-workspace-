@@ -17,7 +17,7 @@ public class PrintBetweenNumbers4v2 {
             int z = input.nextInt();
             input.nextLine();
 
-            if (x > y) {
+            if (!(x < y)) {
                 System.out.println("Error: lower bound " + x + " is not less than or equal to the upper bound " + y + ".");
             } else if (z > y || z < x) {
                 System.out.println("Error: middle number " + z + " is not in-between the lower bound " + x
