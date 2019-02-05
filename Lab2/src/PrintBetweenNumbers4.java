@@ -221,7 +221,13 @@ public class PrintBetweenNumbers4 {
 				 if (yesNo.equals(yes)){
 			   
 
-					yesNo="Y";
+					 System.out.println("Enter a lower bound:");
+						x = input.nextInt();
+						System.out.println("Enter a upper bound:");
+						y = input.nextInt();
+						System.out.println("Enter a middle number:");
+						 z = input.nextInt();
+						 yesNo = "";
 					
 				}
 			
@@ -341,42 +347,6 @@ public class PrintBetweenNumbers4 {
 				
 			}
 			
-			while (!((x<=z && z<=y)||(y<=z && z<=x))) {
-				System.out.println("Error: middle number " + z+  " is not in-between the lower bound " +x+ " and upper bound " +y);
-				System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
-				  yesNo= input.next();
-				 input.nextLine();
-
-				if (!(yesNo.equals(no)||yesNo.equals(yes))) {
-				while (!(yesNo.equals(no)||yesNo.equals(yes))) {
-					System.out.println("Invalid indication on continuation: "+ yesNo);
-					System.out.println("Would you like to continue printing? (Enter Y for yes; N for no)");
-				    yesNo= input.next();
-					input.nextLine();					
-					
-
-				}
-			}
-				if (yesNo.equals(no)) {
-					System.out.println("Bye!");
-					System.exit(0);
-				}
-				
-				while(yesNo.equals(yes)) {
-					
-					System.out.println("Enter a lower bound:");
-					x = input.nextInt();
-					System.out.println("Enter a upper bound:");
-					y = input.nextInt();
-					System.out.println("Enter a middle number:");
-					 z = input.nextInt();
-					 yesNo = "";
-				}
-				
-				
-				
-				
-			}
 			
 			
 				
