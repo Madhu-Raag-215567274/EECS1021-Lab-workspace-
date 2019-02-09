@@ -26,8 +26,13 @@ public class IntegerArray1 {
 //		for (int i=0;i<=ia.length-1;i++) {
 //			System.out.println("Element of ia at index "+ i+":" + ia[i]);
 //		}
-//		
-		//version 2.2
+//		//version 2.2
+		 
+//		for (int i=0;i<=ia.length;i++) {
+////			System.out.println("Element of ia at index "+ i+":" + ia[i]);
+////		}
+////		
+		//version 2.3
 		for (int i=0;i<ia.length;i++) {
 			System.out.println("Element of ia at index "+ i+":" + ia[i]);
 		}
