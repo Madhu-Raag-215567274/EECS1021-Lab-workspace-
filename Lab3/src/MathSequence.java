@@ -21,7 +21,7 @@ public class MathSequence {
 			 int a1 = input.nextInt();
 			 input.nextLine();
 			 System.out.println("Enter the common difference in the arithmetic sequence: ");
-			 int r =input.nextInt();
+			 int d =input.nextInt();
 			 input.nextLine(); 
 			 System.out.println("Enter the number of terms in the arithmetic sequence: ");
 			 int n =input.nextInt();
@@ -29,21 +29,21 @@ public class MathSequence {
 			 
 			 int[] ia = new int[n];			 
 			 for(int j=0;j<n;j++ ) {
-				 ia[j]= a1+j*r;
+				 ia[j]= a1+j*d;
 			 }
 			 ////////////////////////// for console to print properly (array list)
 			 System.out.print("<");
 			 
 		     for(int k= 0 ; k<n; k++) {		
-		    if (k<0 || k<=n-2) {
+		    if (k<=n-2) {
 		     System.out.print(ia[k]+",");
-		    }
+		     }
 		    if (k==n-1) {
 		    	 System.out.print(ia[k]);
-		    }
+		     }
 		    
 			 
-		}
+		   }
 			 System.out.println(">");
 			 //////////////////////////
 			 
@@ -73,7 +73,57 @@ public class MathSequence {
 		 
 		 //Task 2 begins!\\
 			
-			
+		 if (opt==2) {
+			 System.out.println("Enter the first term in the geometric sequence: ");
+			 int a1 = input.nextInt();
+			 input.nextLine();
+			 System.out.println("Enter the common ratio in the geometric sequence: ");
+			 int d =input.nextInt();
+			 input.nextLine(); 
+			 System.out.println("Enter the number of terms in the geometric sequence: ");
+			 int n =input.nextInt();
+			 input.nextLine(); 
+			 
+			 int[] ia = new int[n];			 
+			 for(int j=0;j<n;j++ ) {
+				 ia[j]= (int) (a1*(Math.pow(d, j)));
+			 }
+			 ////////////////////////// for console to print properly (array list)
+			 System.out.print("<");
+			 
+		     for(int k= 0 ; k<n; k++) {		
+		    if (k<=n-2) {
+		     System.out.print(ia[k]+",");
+		     }
+		    if (k==n-1) {
+		    	 System.out.print(ia[k]);
+		     }
+		    
+			 
+		   }
+			 System.out.println(">");
+			 //////////////////////////
+			 
+			 int sum=0;
+			 for(int s = 0; s<ia.length;s++ ) {
+				
+				 sum += ia[s];
+				 
+			 }
+			 System.out.println("Sum of the arithmetic sequence: "+ sum); 
+			 
+			 System.out.println("Would you like to process another sequence?(Y/N)");
+			 String yesNo= input.nextLine();
+			 
+			 if (yesNo.equals("Y")) {
+				 i=1;
+			 }	
+			 if (yesNo.equals("N")) {
+				 i=10;
+				 ///big number to escape the loop
+			 }
+				
+		  }	//end of if-2
 			
 		}
 		
