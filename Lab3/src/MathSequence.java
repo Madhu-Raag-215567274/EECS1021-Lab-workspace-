@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MathSequence1 {
+public class MathSequence {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
