@@ -176,9 +176,11 @@ public class MathSequence {
 				 }
 				 System.out.print(">");
 				 
-				 if (c==1 ||  ia[1]-ia[0]==ia[2]-ia[1]) {
-				 System.out.print(" is an arithmetic sequence with");
-				 System.out.println(" first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum "+m);
+				 if (c==1 ||  (ia[1]-ia[0]==ia[2]-ia[1])) {
+				 System.out.println(" is an arithmetic sequence with");
+				 System.out.println(" first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])
+						 +", length "+(c+1)+","+" and the sum "+m);
+				 
 				 System.out.println("Would you like to process another sequence? (Y/N)");
 				 yesNo= input.nextLine();
 				 
@@ -232,8 +234,8 @@ public class MathSequence {
 					 System.out.print(">");
 					 
 					 if (c==1 ||  ia[1]-ia[0]==ia[2]-ia[1]) {
-					 System.out.print(" is an arithmetic sequence with ");
-					 System.out.println("first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum: "+m);
+					 System.out.println(" is an arithmetic sequence with ");
+					 System.out.println("first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+", length "+(c+1)+","+" and the sum: "+m);
 					 System.out.println("Would you like to process another sequence? (Y/N)");
 					String yesNo= input.nextLine();
 					 
