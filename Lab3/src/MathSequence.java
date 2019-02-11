@@ -178,7 +178,7 @@ public class MathSequence {
 				 
 				 if (c==1 ||  ia[1]-ia[0]==ia[2]-ia[1]) {
 				 System.out.print(" is an arithmetic sequence with");
-				 System.out.println(" first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum: "+m);
+				 System.out.println(" first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum "+m);
 				 System.out.println("Would you like to process another sequence? (Y/N)");
 				 yesNo= input.nextLine();
 				 
