@@ -126,22 +126,42 @@ public class MathSequence1 {
 			
 		 if(opt==3) {
 			 int [] ia = new int [10];
-			 for(int c=0;c<10;c++) {
+			 for(int c=0;c<=9;c++) {
 				
 			 System.out.println("Enter a new number: ");
 			 ia[c] = input.nextInt();
 			 input.nextLine();
+			 if(c<=8) {
 			 System.out.println("You have entered "+(c+1)+ " numbers.");
 			 System.out.println("You may still enter another " +(10-(c+1))+ " numbers.");
+		
+			 
 			 
 			 System.out.println("Would you like to enter another new number? (Y/N)");
 			 String yesNo= input.nextLine();
-			 
+			
+			 if(yesNo.equals("N")&&(c==0)){
 			 for(;yesNo.equals("N")&&(c==0);) {
 			 System.out.println("Error: we cannot infer the common difference from a sequence of size one.");
 			 System.out.println("Would you like to process another sequence? (Y/N)");
-			 yesNo= input.nextLine();			 
-			 }		 
+			 yesNo= input.nextLine();
+			 
+			 if(yesNo.equals("N")&&(c==0)){
+				 System.out.println("Bye!");
+				 System.exit(0);
+				 
+			  }
+			}
+			 if(yesNo.equals("Y")&&(c==0)){
+				 i=3;
+				 c=100;
+			 }
+			
+			 
+			 
+			}
+			 
+			
 			 if(yesNo.equals("N")) {
 				 System.out.print("<");
 				int m=0;
@@ -158,7 +178,7 @@ public class MathSequence1 {
 				 
 				 if (c==1 ||  ia[1]-ia[0]==ia[2]-ia[1]) {
 				 System.out.print("is an arithmetic sequence with");
-				 System.out.println("first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum: "+m);
+				 System.out.println(" first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum: "+m);
 				 System.out.println("Would you like to process another sequence? (Y/N)");
 				 yesNo= input.nextLine();
 				 
@@ -175,8 +195,8 @@ public class MathSequence1 {
 				 ////else statement 
 				 else {
 					 
-					 System.out.println("is not arthmetic series ");
-				 }
+					 System.out.println(" is not arthmetic series ");
+				 
 				 
 				 System.out.println("Would you like to process another sequence? (Y/N)");
 				 yesNo= input.nextLine();
@@ -189,15 +209,62 @@ public class MathSequence1 {
 					 i=10;
 					 c=100;
 				 }
-				 
+			  }
 			 }
-			 
+			 }
 		
 			
 	
 			 if  (c==9) {
 				 System.out.println("You have entered the maximum number of numbers!");
 				 System.out.println("We will start processing your sequence right away.");
+				 System.out.print("<");
+					int m=0;
+					 for (int z =0 ; z<=c;z++) {
+						 if (z<=c-1) {
+				    System.out.print(ia[z]+",");
+						 }
+						 if (z==c) {
+						 System.out.print(ia[z]);
+						 }
+						 m+=ia[z];
+					 }
+					 System.out.print(">");
+					 
+					 if (c==1 ||  ia[1]-ia[0]==ia[2]-ia[1]) {
+					 System.out.print("is an arithmetic sequence with ");
+					 System.out.println("first term "+ia[0]+","+"common difference "+ (ia[1]-ia[0])+" and the sum: "+m);
+					 System.out.println("Would you like to process another sequence? (Y/N)");
+					String yesNo= input.nextLine();
+					 
+					 if(yesNo.equals("Y")) {
+						 i=3;
+						 c=100;
+					 }
+					 else if (yesNo.equals("N")) {
+						 i=10;
+						 c=100;
+					 }
+				 }
+					 
+					 ////else statement 
+					 else {
+						 
+						 System.out.println(" is not arthmetic series ");
+					 
+					 
+					 System.out.println("Would you like to process another sequence? (Y/N)");
+					 String yesNo= input.nextLine();
+					 
+					 if(yesNo.equals("Y")) {
+						 i=3;
+						 c=100;
+					 }
+					 else if (yesNo.equals("N")) {
+						 i=10;
+						 c=100;
+					 }
+				  }
 				 
 				 
 
