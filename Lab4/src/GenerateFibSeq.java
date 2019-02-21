@@ -40,8 +40,7 @@ public class GenerateFibSeq {
 	      for(int s =0; s<size;s++) {
 	    	  int ia[]=new int[size];
 		      ia[0]=1;
-		      ia[1]=1;
-		      
+		      ia[1]=1;		      
 		     
 		      for (s=0; s<=1;s++) {
 		    	  System.out.print(ia[s]+",");		    	  
@@ -70,7 +69,7 @@ public class GenerateFibSeq {
 			  i= 10;						
 			}	
 		}
-		}
+	}
 		input.close();
 	}
 }
