@@ -38,7 +38,35 @@ public class DetermineFibSeq {
 				  c= 10;
 				  i=50;
 				}			
-			}    	  			
+			}
+			if (i==19) {
+				System.out.print("The sequence you entered ");
+				System.out.print("<");				
+			for(int l =0; l<i;l++) {
+				System.out.print(ia[l]);
+				if (l<i-1) {
+					System.out.print(",");
+				}				
+			}		
+			    System.out.println(">");
+			if (((!(ia[0]==1&&ia[1]==1))||(ia[i-1]!=ia[i-2]+ia[i-3]))) {
+				System.out.println("is not the first "+(i+1)+ " numbers in the Fibonacci sequence.");
+			}
+			else {
+				System.out.println("is the first "+(i+1)+" numbers in the Fibonacci sequence.");
+			}
+			System.out.println("Would you like to try another sequence? (Y/N)");
+		      String yesNo= input.nextLine();
+				if(yesNo.equals("Y")) {
+				
+				  i=-1;
+				}
+				else if (yesNo.equals("N")) {
+				 System.out.println("Bye!");
+				  c= 10;
+				  i=50;
+				}			
+			} 
 		}		
 	}		
 	input.close();
