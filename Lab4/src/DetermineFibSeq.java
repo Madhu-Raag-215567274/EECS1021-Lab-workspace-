@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class DetermineFibSeq {	
+public class test {	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		
 	for (int c =0;c<=3;) {
 		int ia[]= new int[20];		
 		for(int i =0 ; i<20;i++) {		 	
@@ -21,7 +22,14 @@ public class DetermineFibSeq {
 				}				
 			}		
 			    System.out.println(">");
-			if (((!(ia[0]==1&&ia[1]==1))||(ia[i-1]!=ia[i-2]+ia[i-3]))) {
+			    
+			  if ((ia[0]==1 && ia[1]==1) && ia[2]==-1) {
+				  System.out.println("is the first "+(i)+" numbers in the Fibonacci sequence.");
+			  }
+			  else if (ia[0]==1 && ia[1]==-1) {
+				  System.out.println("is the first "+(i)+" numbers in the Fibonacci sequence.");
+			  }
+			  else if  (((!(ia[0]==1&&ia[1]==1))||(ia[i-1]!=ia[i-2]+ia[i-3]))) {
 				System.out.println("is not the first "+(i)+ " numbers in the Fibonacci sequence.");
 			}
 			else {
@@ -42,9 +50,9 @@ public class DetermineFibSeq {
 			if (i==19) {
 				System.out.print("The sequence you entered ");
 				System.out.print("<");				
-			for(int l =0; l<i;l++) {
+			for(int l =0; l<=i;l++) {
 				System.out.print(ia[l]);
-				if (l<i-1) {
+				if (l<=i-1) {
 					System.out.print(",");
 				}				
 			}		
