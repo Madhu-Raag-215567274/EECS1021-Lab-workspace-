@@ -29,7 +29,7 @@ public class DetermineFibSeq {
 			  else if (ia[0]==1 && ia[1]==-1) {
 				  System.out.println("is the first "+(i)+" numbers in the Fibonacci sequence.");
 			  }
-			  else if  (((!(ia[0]==1&&ia[1]==1))||(ia[i-1]!=ia[i-2]+ia[i-3]||(ia[i-2]!=ia[i-3]+ia[i-4])||(ia[i-3]!=ia[i-4]+ia[i-5])||(ia[i-4]!=ia[i-5]+ia[i-6])))) {
+			  else if  (((!(ia[0]==1&&ia[1]==1))||(ia[i-1]!=ia[i-2]+ia[i-3]))) {
 				System.out.println("is not the first "+(i)+ " numbers in the Fibonacci sequence.");
 			}
 			else {
