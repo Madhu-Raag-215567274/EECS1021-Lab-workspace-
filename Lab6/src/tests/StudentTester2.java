@@ -29,6 +29,12 @@ public class StudentTester2 {
 		s1.addCourse(cr2);
 		s2.addCourse(cr2);
 		s2.addCourse(cr3);
+		
+		System.out.println(s1.courses[0]== s2.courses[1]);// false
+		System.out.println(s1.courses[1]== s2.courses[0]);// true
+		System.out.println(s1.courses[2]== s2.courses[2]);//true
+		System.out.println(s1.courses[0].instructor== s2.courses[0].instructor);//true
+
 
 
 

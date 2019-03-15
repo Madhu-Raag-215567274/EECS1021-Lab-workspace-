@@ -4,18 +4,18 @@ package model;
 
  */
 public class Faculty {
-/*
- * Attributes
- */
-	String name;
-	String address; 
-	int extension;
-	
+	/*
+	 * Attributes
+	 */
+	public String name;
+	public String address; 
+	public int extension;
+
 	public Faculty(String name, String address, int extension) {
 		this.name = name;
 		this.address=address;
 		this.extension=extension;
-		
+
 	}
 
 	public String getName() {
@@ -41,14 +41,14 @@ public class Faculty {
 	public void setExtension(int extension) {
 		this.extension = extension;
 	}
-	
+
 	public String getDescription() {
 		String result="";
 		result = "Faculty " + this.name + " has campus address " + this.address + " and phone extension " + this.extension; 
 		return result;
 	}
-	
 
 
-		
+
+
 }

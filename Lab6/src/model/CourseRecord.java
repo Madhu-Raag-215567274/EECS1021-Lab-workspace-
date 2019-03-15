@@ -4,10 +4,10 @@ package model;
  */
 
 public class CourseRecord {
-	String title;// notice that String is not a primitive type, it is a reference type.
-	int marks; /* Final raw marks out of 100*/
+	public String title;// notice that String is not a primitive type, it is a reference type.
+	public int marks; /* Final raw marks out of 100*/
 	// Reminder: when declaring the type of an attribute, you may use the name of an existing class.
-	Faculty instructor;/* stores the address of some Faculty object*/
+	public Faculty instructor;/* stores the address of some Faculty object*/
 
 	public CourseRecord() {
 		// version 1: no attributes will be initialized using input values.
@@ -50,7 +50,7 @@ public class CourseRecord {
 	public String getDescription() {
 		// Version 1: this.instructor will give you the address of the Faculty object
 		//return "Course "+ this.title + "( raw marks: " + this.marks + ") has instructor " + this.instructor;
-        
+
 		// version 2: this.instructor.getDescription() will give you the description of the faculty object 
 		String desc="";
 		if(this.instructor==null) {

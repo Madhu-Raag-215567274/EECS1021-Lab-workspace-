@@ -3,16 +3,16 @@ package model;
  * Each student may be registered in up to 5 courses. 
  */
 public class Student {
-	String name;
-	final int MAX_NUM_COURSES= 5;
+	public String name;
+	public final int MAX_NUM_COURSES= 5;
 	// each element (e.g., course[0],..., course[course.length-1])in the array stores
 	//the address of some CourseRecord object.
 		
-	CourseRecord[] courses; 
+	public CourseRecord[] courses; 
 	// 1. value of noc represents the number of CourseRecord objects stored in the courses array.
 	// 2. value of noc denotes where in the array 'courses' is the next CouseRecord object to be stored.
 
-	int noc;
+	public int noc;
 	
 	public Student(String name) {
 		this.name =name;
