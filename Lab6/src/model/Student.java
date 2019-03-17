@@ -79,6 +79,40 @@ public class Student {
 			}
 	}
 	
+	double getGPA(){
+		double gpa = 0.0;
+		double gp = 0.0;
+		
+		for(int i =0; i<this.noc; i++) {
+//			CourseRecord c = this.courses[i];
+//			String ig = c.getLetterGrade();
+			String ig = this.courses[i].getLetterGrade();
+			if(ig.equals("A+")) {
+				gp += 9;
+			}
+			else if (ig.equals("A")) {
+				gp += 8;
+			}
+			else if (ig.equals("B")) {
+				gp += 7;
+			}
+			else if (ig.equals("C")) {
+				gp += 6;
+			}
+			else if (ig.equals("D")) {
+				gp += 5;
+			}
+			else {
+				gp +=0;
+			}
+			
+			
+		}
+		gpa= gp / this.noc;
+		
+		return gpa;
+	}
+	
 	// Helper method reused by getMarks and setMarks 
 	// Given the title of course, return the index of the corresponding course object.
 	// If the title does not exists, return -1.
@@ -115,7 +149,8 @@ public class Student {
 //		}
 		
 		// version 3 
-		result += "Student "+ this.name + " has registered " + this.noc + " courses: ";
+		result += "Student "+ this.name 
+				+ " has registered " + this.noc + " courses(with gpa " + this.getGPA() + "): \n";
 		for(int i =0 ; i< this.noc;i++) {
 			result += this.courses[i].getDescription() + "\n"; 
 		}

@@ -47,6 +47,29 @@ public class CourseRecord {
 	public void setInstructor(Faculty instructor) {
 		this.instructor = instructor;
 	}
+	String getLetterGrade() {
+		String lg = "";
+		 if(this.marks>= 90) {
+			 lg="A+";
+		 }
+		 else if (this.marks>= 80) {
+			lg = "A" ;
+		 }
+		 else if (this.marks>= 70) {
+				lg = "B" ;
+			 }
+		 else if (this.marks>= 60) {
+				lg = "C" ;
+			 }
+		 else if (this.marks>= 50) {
+				lg = "D" ;
+			 }
+		 else {// 50
+			 lg="F";
+		 }
+		 return lg;
+	}
+	
 	public String getDescription() {
 		// Version 1: this.instructor will give you the address of the Faculty object
 		//return "Course "+ this.title + "( raw marks: " + this.marks + ") has instructor " + this.instructor;
@@ -58,7 +81,7 @@ public class CourseRecord {
 
 		}
 		else {
-			desc=  "Course "+ this.title + "( raw marks: " + this.marks + ") has instructor (" + this.instructor.getDescription()+")";
+			desc=  "\nCourse "+ this.title + "( raw marks: " + this.marks +" and letter grade "+ this.getLetterGrade()+ " ) has instructor ( " + this.instructor.getDescription()+")";
 
 		}
 		return desc; 
