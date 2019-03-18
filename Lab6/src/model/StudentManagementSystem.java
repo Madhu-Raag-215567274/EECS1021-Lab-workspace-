@@ -61,17 +61,8 @@ public class StudentManagementSystem {
 			}
 		}
 				
-		return result;
-				
+		return result;		
 
-		
-		
-
-		
-	
-		
-
-	
 	}
 	
 	public void setMarks(String name, String t,int marks) {
@@ -115,10 +106,7 @@ public class StudentManagementSystem {
 			}
 		}
 		
-	}
-
-	
-	
+	}	
 
 
 }
