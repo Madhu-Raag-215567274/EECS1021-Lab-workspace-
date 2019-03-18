@@ -5,18 +5,18 @@ import model.Student;
 public class StudentManagementSystem {
 	
 	public Student [] des; 
+	int nos=0 ;
+	public final int MAX_NUM_STUDENTS= 100;
+	//Student[] sms;
 
 	
-		int nos=0 ;
-	public final int MAX_NUM_STUDENTS= 100;
-
-		
-
-	public Student[] sms = new Student[MAX_NUM_STUDENTS];
+	Student[] sms = new Student[MAX_NUM_STUDENTS];
+	
 	
 	public StudentManagementSystem(){
 		
-	this.sms = new Student[MAX_NUM_STUDENTS];
+	Student[] sms = new Student[MAX_NUM_STUDENTS];
+//	this.sms = new Student[MAX_NUM_STUDENTS];
 	this.nos = 0;
 	}
 	
@@ -27,7 +27,7 @@ public class StudentManagementSystem {
 	}
 	
 	public void addStudent(Student a) {
-		
+		Student[] sms = new Student[MAX_NUM_STUDENTS];
 		this.sms [this.nos] = a;
 		this.nos ++;		
 		
