@@ -4,12 +4,11 @@ import model.Student;
 
 public class StudentManagementSystem {
 	
-	public Student[] des; 
 	int nos;
 	public final int MAX_NUM_STUDENTS= 100;
 	
 	public Student[] sms;
-	CourseRecord s;
+	CourseRecord[] s;
 	
 	
 	public StudentManagementSystem(){
@@ -34,11 +33,11 @@ public class StudentManagementSystem {
 	}
 
 	public String getDescription() {
-		this.des= this.sms;
-		String result ="Student management system currently stores "+ this.nos+" students:";
+
+		String result ="Student management system currently stores "+ this.nos+" students: \n";
 		if (this.nos>0  ) {		
 			for(int i =0 ; i<this.nos; i++) {
-				result +=  des[i].getDescription();				
+				result +=  sms[i].getDescription();				
 			}			
 		}
 		else  {
@@ -50,13 +49,71 @@ public class StudentManagementSystem {
 	}
 	public int getMarks(String s, String t) {
 		
-		this.s= new CourseRecord(t);
+//		this.s= new CourseRecord(t);
+//		
+//		return this.s.getMarks();
+		int result = -1;
+		for (int i = 0 ; i< sms.length;i++) {
+			if (s.equals(sms[i].name)) {
+			
+				result = sms[i].getMarks(t);
+				
+			}
+		}
+				
+		return result;
+				
+
 		
-		return this.s.getMarks();
+		
+
+		
+	
+		
+
+	
 	}
 	
 	public void setMarks(String name, String t,int marks) {
 			
+		for (int i = 0; i<sms.length;i++) {
+			if (name.equals(sms[i].name)) {
+				sms[i].setMarks(t, marks);
+			}
+		}
+	}
+
+	public double getGPA(String string) {
+		
+		double s = 0;
+		for (int i = 0; i < sms.length ; i++) {
+			if (string.equals(sms[i].name)) {
+				s= sms[i].getGPA();
+			}
+		}
+
+		return s;
+	}
+
+	public void addStudent(String s) {
+		Student [] sms1 = new Student[nos+1];
+		for(int i = 0 ; i<this.nos;i++) {
+			sms1[i]= this.sms[i];
+		}
+		sms1[nos]= new Student(s);
+		this.sms= sms1;
+		nos++;	
+
+		
+	}
+
+	public void addCourse(String s, CourseRecord cr) {
+		
+		for(int i = 0 ; i<this.nos;i++) {
+		if (s.equals(sms[i].name)) {
+			sms[i].addCourse(cr);
+			}
+		}
 		
 	}
 
