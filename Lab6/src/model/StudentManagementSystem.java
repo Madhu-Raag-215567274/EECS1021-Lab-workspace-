@@ -37,7 +37,7 @@ public class StudentManagementSystem {
 		String result ="Student management system currently stores "+ this.nos+" students: \n";
 		if (this.nos>0  ) {		
 			for(int i =0 ; i<this.nos; i++) {
-				result +=  sms[i].getDescription();				
+				result +=  sms[i].getDescription()+ "\n";				
 			}			
 		}
 		else  {
