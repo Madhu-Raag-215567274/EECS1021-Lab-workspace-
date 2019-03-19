@@ -105,12 +105,20 @@ public class Student {
 			else {
 				gp +=0;
 			}
-			
-			
 		}
-		gpa= gp / this.noc;
+			
+		if(this.noc>0) {
+				gpa= gp/this.noc;
+			}
+			else {
+				gpa=0.0;
+			}
+			
+			return gpa;
 		
-		return gpa;
+		
+		
+		
 	}
 	
 	// Helper method reused by getMarks and setMarks 
