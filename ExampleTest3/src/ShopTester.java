@@ -50,54 +50,54 @@ public class ShopTester {
 		alanPay = alan.getAmountToPay();
 		System.out.println("Alan needs to pay: " + alanPay);
 		
-//		System.out.println("(5)-------------------------------");
-//		alan.addOrder("Caffe Latte", 5.5, 1);
-//		alanOrders = alan.getOrders();
-//		System.out.println("Alan's number of orders: " + alanOrders.length);
-//		alanOrder1 = alanOrders[0];
-//		System.out.println("Product of Alan's 1st order: " + alanOrder1.getProduct());
-//		System.out.println("Price of Alan's 1st order: " + alanOrder1.getPrice());
-//		System.out.println("Quantity of Alan's 1st order: " + alanOrder1.getQuantity());
-//		Order alanOrder2 = alanOrders[1];
-//		System.out.println("Product of Alan's 2nd order: " + alanOrder2.getProduct());
-//		System.out.println("Price of Alan's 2nd order: " + alanOrder2.getPrice());
-//		System.out.println("Quantity of Alan's 2nd order: " + alanOrder2.getQuantity());
-//		alanPay = alan.getAmountToPay();
-//		System.out.println("Alan needs to pay: " + alanPay);
-//		
-//		System.out.println("(6)-------------------------------");
-//		Shop hollys = new Shop();
-//		Member[] members = hollys.getMembers();
-//		System.out.println("Number of members: " + members.length);
-//		System.out.println("Alan is a memebr: " + hollys.hasMember(alan.getId()));
-//		System.out.println("Mark is a memebr: " + hollys.hasMember(mark.getId()));
-//	
-//		System.out.println("(7)-------------------------------");
-//		hollys.addMember(alan);
-//		hollys.addMember(mark);
-//		members = hollys.getMembers();
-//		System.out.println("Number of members: " + members.length);
-//		System.out.println("Member 1's id: " + members[0].getId());
-//		System.out.println("Member 2's id: " + members[1].getId());
-//		System.out.println("Alan is a memebr: " + hollys.hasMember(alan.getId()));
-//		System.out.println("Mark is a memebr: " + hollys.hasMember(mark.getId()));
-//		
-//		System.out.println("(8)-------------------------------");
-//		/* charge an existing member: deduct their balance */
-//		hollys.checkOut(alan.getId()); 
-//		hollys.checkOut(mark.getId()); 
-//		System.out.println("Member with id \"mem3\" exists: " + hollys.hasMember("mem3"));
-//		/* charge a non-existing member: do nothing */
-//		hollys.checkOut("mem3"); 
-//		System.out.println("Alan's new balance: " + alan.getBalance());
-//		System.out.println("Mark's new balance: " + mark.getBalance());
-//		
-//		/* After charging a member with their current orders, 
-//		 * we also clear all those orders. */
-//		System.out.println("(9)-------------------------------");
-//		alanOrders = alan.getOrders();
-//		System.out.println("Alan's number of orders: " + alanOrders.length);
-//		alanPay = alan.getAmountToPay();
-//		System.out.println("Alan needs to pay: " + alanPay);
+		System.out.println("(5)-------------------------------");
+		alan.addOrder("Caffe Latte", 5.5, 1);
+		alanOrders = alan.getOrders();
+		System.out.println("Alan's number of orders: " + alanOrders.length);
+		alanOrder1 = alanOrders[0];
+		System.out.println("Product of Alan's 1st order: " + alanOrder1.getProduct());
+		System.out.println("Price of Alan's 1st order: " + alanOrder1.getPrice());
+		System.out.println("Quantity of Alan's 1st order: " + alanOrder1.getQuantity());
+		Order alanOrder2 = alanOrders[1];
+		System.out.println("Product of Alan's 2nd order: " + alanOrder2.getProduct());
+		System.out.println("Price of Alan's 2nd order: " + alanOrder2.getPrice());
+		System.out.println("Quantity of Alan's 2nd order: " + alanOrder2.getQuantity());
+		alanPay = alan.getAmountToPay();
+		System.out.println("Alan needs to pay: " + alanPay);
+		
+		System.out.println("(6)-------------------------------");
+		Shop hollys = new Shop();
+		Member[] members = hollys.getMembers();
+		System.out.println("Number of members: " + members.length);
+		System.out.println("Alan is a memebr: " + hollys.hasMember(alan.getId()));
+		System.out.println("Mark is a memebr: " + hollys.hasMember(mark.getId()));
+	
+		System.out.println("(7)-------------------------------");
+		hollys.addMember(alan);
+		hollys.addMember(mark);
+		members = hollys.getMembers();
+		System.out.println("Number of members: " + members.length);
+		System.out.println("Member 1's id: " + members[0].getId());
+		System.out.println("Member 2's id: " + members[1].getId());
+		System.out.println("Alan is a memebr: " + hollys.hasMember(alan.getId()));
+		System.out.println("Mark is a memebr: " + hollys.hasMember(mark.getId()));
+		
+		System.out.println("(8)-------------------------------");
+		/* charge an existing member: deduct their balance */
+		hollys.checkOut(alan.getId()); 
+		hollys.checkOut(mark.getId()); 
+		System.out.println("Member with id \"mem3\" exists: " + hollys.hasMember("mem3"));
+		/* charge a non-existing member: do nothing */
+		hollys.checkOut("mem3"); 
+		System.out.println("Alan's new balance: " + alan.getBalance());
+		System.out.println("Mark's new balance: " + mark.getBalance());
+		
+		/* After charging a member with their current orders, 
+		 * we also clear all those orders. */
+		System.out.println("(9)-------------------------------");
+		alanOrders = alan.getOrders();
+		System.out.println("Alan's number of orders: " + alanOrders.length);
+		alanPay = alan.getAmountToPay();
+		System.out.println("Alan needs to pay: " + alanPay);
 	}
 }

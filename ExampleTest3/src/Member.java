@@ -6,6 +6,7 @@ public class Member {
 	static int l =1;
 	double amtpay;
 	int no=0;
+	
 
 	Member(double balc) {
 		this.balc=balc;
@@ -26,21 +27,26 @@ public class Member {
 		return this.balc;
 	}
 	Order[]  getOrders() {
+		
 		Order[] num = new Order[no];
 		
 		for(int i =0; i<num.length;i++) {
 	     num[i]=this.ord[i];
 		}
+	
 		no++;		
 
 		return num;
 	}
 	double getAmountToPay() {
+		double sum=0;
 		for(int i =0; i<this.no-1;i++) {
-			this.amtpay= this.ord[i].getPrice()*this.ord[i].getQuantity();
+			sum= this.amtpay;
+			this.amtpay= this.ord[i].getPrice()*this.ord[i].getQuantity();		
+			
 		}
-		
-		return this.amtpay;
+		double tot = sum+this.amtpay;
+		return tot;
 	}
 	void deposit (double dep) {
 		this.balc= dep+ this.balc;
@@ -51,7 +57,18 @@ public class Member {
 		 }
 		
 	}
-
+	void addOrder(String prdnm, double price, int quant) {
+		
+		Order ords = new Order(prdnm,  price,  quant);
+		this.ord[this.no-1]= ords;
+		
+	}
+	void withdraw(double amount) {
+		this.balc -= amount;
+	}
+	void clear() {
+		no=0;
+	}
 
 
 
