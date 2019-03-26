@@ -1,53 +1,58 @@
-
 public class Shop {
 	
-	Member[] mem;
-	int nom=0;
-	
-	
+	Member[] shop;
+	int nom;
+
 	Shop(){
-		this.mem = new Member[30];
+		this.shop = new Member [30];
 	}
 
 	Member[] getMembers() {
-		Member [] num= new Member[nom];
-		for(int i =0; i<num.length;i++) {
-			num[i]=this.mem[i];			
-		}		
-		
-	
+		Member[] num = new Member[nom];
+		for(int i=0; i<num.length; i++) {
+			num [i] = this.shop[i];
+
+		}
+
+
+
 		return num;
 	}
 
-	void addMember(Member mem) {
-	
-		this.mem[nom]=mem;
-		
-		nom++;
-	}
-
 	boolean hasMember(String id) {
-		boolean result =false;
-		
-		for(int i =0; i<nom; i++) {
-			if(this.mem[i].getId()== id) {
+		boolean result=false;
+
+		for(int i =0 ; i< this.nom;i++) {
+			if(this.shop[i].getId().equals(id)) {
 				result =true;
-				
 			}
 		}
-		
-		
+
+
 		return result;
 	}
 
-	void checkOut(String id) {
-		for(int i=0; i<nom;i++) {
-			if(this.mem[i].getId().equals(id) ) {				
-				 this.mem[i].withdraw(this.mem[i].amtpay);
+	 void addMember(Member alan) {
+       this.shop[nom]= alan;		
+       nom++;
+	}
+
+	void checkOut(String id) {	
+
+		for(int i =0 ; i< this.nom;i++) {
+			if(this.shop[i].getId().equals(id)) {
+				this.shop[i].bla =this.shop[i].bla -this.shop[i].getAmountToPay();
+				
 			}
+			
+			
+			
 		}
 		
-			
+	
 	}
+
+
+
 
 }

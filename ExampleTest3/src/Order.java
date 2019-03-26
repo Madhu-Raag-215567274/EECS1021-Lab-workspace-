@@ -1,41 +1,55 @@
+class Order {
+	String product;
+	double price;
+	int quan ;	 
 
-public class Order {
-	String pdt;
-	double prc;
-	int qty ;
 
-
-	 Order(String pdt, double prc, int qty) {
-		this.pdt = pdt;
-		this.prc = prc;
-		this.qty = qty;
-		
+	Order(String product, double price, int quan) {
+		this.product= product;
+		this.price = price;
+		this.quan= quan;
 	}
-	 Order(){
-		 this.pdt = null;
-			this.prc = 0;
-			this.qty = 0;
-		 
-		 
-	 }
-	 String getProduct() {
-		return this.pdt; 
-	 }
-	 double getPrice() {
-		return this.prc;
+
+
+	Order() {
+
+
 	}
+
+
+	String getProduct() {
+
+
+
+		return this.product;
+	}
+
+
+	double getPrice() {
+
+
+		return this.price;
+	}
+
 	int getQuantity() {
-		return this.qty;
+
+		return this.quan;
 	}
-	void setProduct(String producName){
-		this.pdt = producName;
+
+
+	void setProduct(String string) {
+		this.product= string;
+
 	}
-	void setPrice(double price) {
-		this.prc=price;
-		
+
+
+	void setPrice(double d) {
+		this.price=d;	
 	}
-	void setQuantity(int quanitity) {
-		this.qty= quanitity;
+
+	void setQuantity(int i) {
+		this.quan=i;		
 	}
-		
-	}
+
+
+}
