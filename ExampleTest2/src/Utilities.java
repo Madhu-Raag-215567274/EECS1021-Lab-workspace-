@@ -73,8 +73,8 @@ public class Utilities {
 
 		/* Your code starts after this line: */
 
-		for (int i = 0; (i < ia.length) && !result; i++) {
-			result = (ia[i] % 5 == 0);
+		for (int i = 0; (i < ia.length) ; i++) {
+			result = (ia[i] % 5 == 0)|| result;
 		}
 
 		// Do not modify this return statement.

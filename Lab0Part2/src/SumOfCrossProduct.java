@@ -8,6 +8,7 @@ public class SumOfCrossProduct {
 		System.out.println("Enter 1st integer in sequence 1: ");
 		int sq1a = input.nextInt();
 		input.nextLine();
+	
 		
 		
 		System.out.println("Enter 2nd integer in sequence 1: ");
